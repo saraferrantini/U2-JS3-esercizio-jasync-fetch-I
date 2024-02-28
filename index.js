@@ -20,7 +20,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
     let htmlInniettato = "";
     for (let i = 0; i <= jsonData.length - 1; i++) {
       let html = `
-      <div class="col-lg-3 col-md-4 col-sm-6" id=${jsonData[i].asin}>
+      <div class="col-lg-3 col-md-4 col-sm-6 d-flex" id=${jsonData[i].asin}>
         <div class="card border-info border-3" style="width: 18rem">
         <img src=${jsonData[i].img} />
         <div class="card-body">
